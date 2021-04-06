@@ -14,8 +14,10 @@ public class Main implements ICommand {
     @Override
     public void execute() {
         ArrayList<ICommand> commands = new ArrayList<>();
+        //Lab2
         commands.add(new NonlinearEquationsMenu());
         commands.add(new SystemNonlinearEquations());
+        //
         MenuModule menu = new MenuModule(commands);
         menu.execute();
     }
